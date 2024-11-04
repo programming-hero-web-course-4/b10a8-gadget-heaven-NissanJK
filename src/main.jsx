@@ -13,6 +13,8 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Statistics from './components/Statistics/Statistics';
 import { HelmetProvider } from 'react-helmet-async';
 import FAQs from './components/FAQs/FAQs';
+import GadgetDetails from './components/GadgetDetails/GadgetDetails';
+import { ShoppingProvider } from './context/ShoppingContext';
 
 const router = createBrowserRouter([
   {
@@ -36,14 +38,20 @@ const router = createBrowserRouter([
         path: "faqs",
         element: <FAQs></FAQs>
       },
+      {
+        path: "gadgets/:product_id",
+        element: <GadgetDetails></GadgetDetails>
+      },
     ],
   },
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HelmetProvider>
-      <RouterProvider router={router} />
-    </HelmetProvider>
+    <ShoppingProvider>
+      <HelmetProvider>
+        <RouterProvider router={router} />
+      </HelmetProvider>
+    </ShoppingProvider>
   </StrictMode>,
 )
