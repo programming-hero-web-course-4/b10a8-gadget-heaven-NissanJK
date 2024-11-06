@@ -1,113 +1,156 @@
 [
-    {
-      "product_id": "1",
-      "product_title": "UltraLaptop Pro",
-      "product_image": "https://i.ibb.co.com/cDrTJ6s/image1.jpg",
-      "category": "Laptops",
-      "price": 1100,
-      "description": "A high-performance laptop suitable for work and play.",
-      "specifications": ["16GB RAM", "512GB SSD", "Intel i5 Processor"],
-      "availability": true,
-      "rating": 4.7
-    },
-    {
-      "product_id": "2",
-      "product_title": "GigaLaptop S",
-      "product_image": "https://i.ibb.co.com/BPX4z4G/image2.jpg",
-      "category": "Laptops",
-      "price": 1300,
-      "description": "A laptop with advanced graphics and powerful processing.",
-      "specifications": ["32GB RAM", "1TB SSD", "Intel i7 Processor"],
-      "availability": true,
-      "rating": 4.8
-    },
-    {
-      "product_id": "3",
-      "product_title": "SlimBook 14",
-      "product_image": "https://i.ibb.co.com/VLbjgrZ/image3.jpg",
-      "category": "Laptops",
-      "price": 950,
-      "description": "Lightweight and powerful laptop for everyday use.",
-      "specifications": ["8GB RAM", "256GB SSD", "AMD Ryzen 5"],
-      "availability": true,
-      "rating": 4.5
-    },
-    {
-      "product_id": "4",
-      "product_title": "ProLaptop X",
-      "product_image": "https://i.ibb.co.com/z6s1Bnt/image4.jpg",
-      "category": "Laptops",
-      "price": 1500,
-      "description": "A laptop built for creators and professionals.",
-      "specifications": ["16GB RAM", "1TB SSD", "Intel i9 Processor"],
-      "availability": true,
-      "rating": 4.9
-    },
-    {
-      "product_id": "5",
-      "product_title": "NoteBook Plus",
-      "product_image": "https://i.ibb.co.com/qmPgjBQ/image5.jpg",
-      "category": "Laptops",
-      "price": 700,
-      "description": "Affordable laptop with solid performance for daily tasks.",
-      "specifications": ["4GB RAM", "128GB SSD", "Intel i3 Processor"],
-      "availability": false,
-      "rating": 4.1
-    },
-    {
-      "product_id": "6",
-      "product_title": "GamingBook G5",
-      "product_image": "https://i.ibb.co.com/XY6mtZc/image6.jpg",
-      "category": "Laptops",
-      "price": 1400,
-      "description": "A gaming laptop with high-refresh display and discrete graphics.",
-      "specifications": ["16GB RAM", "512GB SSD", "NVIDIA GTX 1660"],
-      "availability": true,
-      "rating": 4.6
-    },
-    {
-      "product_id": "7",
-      "product_title": "SmartPhone Pro",
-      "product_image": "https://i.ibb.co.com/QP6GGJY/image9.jpg",
-      "category": "Phones",
-      "price": 800,
-      "description": "A high-end smartphone with great battery life and camera.",
-      "specifications": ["128GB Storage", "6.5-inch Display", "Triple Camera"],
-      "availability": true,
-      "rating": 4.5
-    },
-    {
-      "product_id": "8",
-      "product_title": "SmartPhone Lite",
-      "product_image": "https://i.ibb.co.com/QYd0tG2/images10.jpg",
-      "category": "Phones",
-      "price": 600,
-      "description": "An affordable smartphone with essential features.",
-      "specifications": ["64GB Storage", "6-inch Display", "Dual Camera"],
-      "availability": true,
-      "rating": 4.2
-    },
-    {
-      "product_id": "9",
-      "product_title": "QuickCharge Adapter",
-      "product_image": "https://i.ibb.co.com/SQK2Nbb/image7.jpg",
-      "category": "Accessories",
-      "price": 50,
-      "description": "Fast charging adapter compatible with most smartphones.",
-      "specifications": ["USB-C", "18W Power", "Compact Design"],
-      "availability": true,
-      "rating": 4.3
-    },
-    {
-      "product_id": "10",
-      "product_title": "Wireless Earbuds",
-      "product_image": "https://i.ibb.co.com/bz4VgyQ/image8.jpg",
-      "category": "Accessories",
-      "price": 75,
-      "description": "Wireless earbuds with noise-cancellation and clear audio.",
-      "specifications": ["Bluetooth 5.0", "Noise Cancellation", "20-hour Battery"],
-      "availability": false,
-      "rating": 4.4
-    }
-  ]
-  
+  {
+    "product_id": "1",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/Dell-XPS-13-Plus-BD-Price-1.jpg",
+    "category": "Computers",
+    "price": 1100,
+    "description": "A high-performance device suitable for work and entertainment.",
+    "specifications": ["16GB RAM", "512GB SSD", "Intel i5 Processor"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "2",
+    "product_title": "MacBook Pro 16",
+    "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/Apple-Macbook-Pro-16-M3-Chip-6.jpg",
+    "category": "Computers",
+    "price": 1300,
+    "description": "Powerful computing device with advanced graphics.",
+    "specifications": ["32GB RAM", "1TB SSD", "Intel i7 Processor"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "3",
+    "product_title": "HP Spectre x360",
+    "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/Hp-6-5.jpg",
+    "category": "Computers",
+    "price": 950,
+    "description": "Lightweight and versatile device for everyday use.",
+    "specifications": ["8GB RAM", "256GB SSD", "AMD Ryzen 5"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "4",
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/LENOVO-Thinkpad-13-2.jpg",
+    "category": "Computers",
+    "price": 1500,
+    "description": "Ideal for professionals needing top-tier performance.",
+    "specifications": ["16GB RAM", "1TB SSD", "Intel i9 Processor"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "5",
+    "product_title": "Acer Aspire 5",
+    "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/Acer-ASPIRE-6-2.jpg",
+    "category": "Computers",
+    "price": 700,
+    "description": "Reliable and affordable for daily computing tasks.",
+    "specifications": ["4GB RAM", "128GB SSD", "Intel i3 Processor"],
+    "availability": false,
+    "rating": 4.1
+  },
+  {
+    "product_id": "6",
+    "product_title": "ASUS ROG Zephyrus G15",
+    "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/Asus-ROG-Zephyrus-G15-3-1.jpg",
+    "category": "Computers",
+    "price": 1400,
+    "description": "Designed for gaming with high-refresh display and graphics.",
+    "specifications": ["16GB RAM", "512GB SSD", "NVIDIA GTX 1660"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "7",
+    "product_title": "iPhone 13 Pro",
+    "product_image": "https://i.ytimg.com/vi/PJEKya5cIoE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC9EElZtPiweIx4fdcURssW-e8Oeg",
+    "category": "Phones",
+    "price": 800,
+    "description": "A high-end smartphone with excellent battery life and camera.",
+    "specifications": ["128GB Storage", "6.1-inch Display", "Triple Camera"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "8",
+    "product_title": "Samsung Galaxy S21",
+    "product_image": "https://img.drz.lazcdn.com/static/bd/p/7e65d58b916b1f22d061ad4e826a9da4.jpg_720x720q80.jpg",
+    "category": "Phones",
+    "price": 600,
+    "description": "Affordable smartphone with essential features.",
+    "specifications": ["64GB Storage", "6.2-inch Display", "Dual Camera"],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "product_id": "9",
+    "product_title": "Apple Watch Series 7",
+    "product_image": "https://mobilexchangebd.com/storage/general/apple-watch-series-7-45mm-gps-smartwatch.jpg",
+    "category": "Smart Watches",
+    "price": 400,
+    "description": "Advanced smartwatch with health tracking and messaging.",
+    "specifications": ["44mm Case", "GPS", "Water Resistant"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "10",
+    "product_title": "Samsung Galaxy Watch 4",
+    "product_image": "https://www.custommacbd.com/cdn/shop/products/SamsungGalaxyWatch4Black.jpg?v=1630827776",
+    "category": "Smart Watches",
+    "price": 350,
+    "description": "Smartwatch with fitness and health monitoring features.",
+    "specifications": ["40mm Case", "GPS", "Sleep Tracking"],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": "11",
+    "product_title": "Anker 20W USB-C Charger",
+    "product_image": "https://dexgen.com.bd/wp-content/uploads/2024/09/Anker-312-Charger-30W-with-5-ft-Long-USB-C-to-USB-C-Cable-Anker-30w-Charger-in-Bangladesh-1-819x1024.jpg",
+    "category": "Chargers",
+    "price": 75,
+    "description": "Compact fast charger compatible with most smartphones.",
+    "specifications": ["USB-C", "20W Power", "Compact Design"],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": "12",
+    "product_title": "Belkin Wireless Charger 15W",
+    "product_image": "https://www.belkin.com/dw/image/v2/BGBH_PRD/on/demandware.static/-/Sites-master-product-catalog-blk/default/dw7ebd652d/images/hi-res/NaN/f16476db9d2ad27_WIB002btBK_Update%20PDP%20for%20BoostCharge%20Wireless%20Charging%20Stand_(WIN207)_shot2.png?sw=700&sh=700&sm=fit",
+    "category": "Chargers",
+    "price": 65,
+    "description": "Fast wireless charger for Qi-enabled devices.",
+    "specifications": ["15W Power", "Qi-Compatible", "LED Indicator"],
+    "availability": false,
+    "rating": 4.4
+  },
+  {
+    "product_id": "13",
+    "product_title": "Anker PowerCore 10000",
+    "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Anker-PowerCore-10000-PD-Redux-18W-a-4218.jpg",
+    "category": "Power Banks",
+    "price": 60,
+    "description": "Portable power bank with high-speed charging.",
+    "specifications": ["10000mAh", "USB-A Output", "Compact Size"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "14",
+    "product_title": "RAVPower 20000mAh PD Power Bank",
+    "product_image": "https://jgsuperstore.com/cdn/shop/products/A_036db757-c6d6-4c21-9cf8-feb55cb9c8cb.jpg?v=1667869721",
+    "category": "Power Banks",
+    "price": 70,
+    "description": "Large capacity power bank with Power Delivery support.",
+    "specifications": ["20000mAh", "USB-C PD", "Dual USB Ports"],
+    "availability": true,
+    "rating": 4.8
+  }
+]

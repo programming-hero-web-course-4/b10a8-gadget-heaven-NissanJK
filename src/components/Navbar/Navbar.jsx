@@ -1,6 +1,8 @@
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 import { useShopping } from "../../context/ShoppingContext";
+import { IoMenu } from "react-icons/io5";
+
 
 const Navbar = () => {
     const location = useLocation();
@@ -25,18 +27,7 @@ const Navbar = () => {
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+                    <IoMenu className="size-6"/>
                     </div>
                     <ul
                         tabIndex={0}
@@ -52,16 +43,16 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button class="btn btn-ghost btn-circle">
-                    <div class="indicator">
+                <button className="btn btn-ghost btn-circle">
+                    <div className="indicator">
                         <FaShoppingCart></FaShoppingCart>
-                        <span class="badge badge-sm indicator-item">{cart.length}</span>
+                        <span className="badge badge-sm indicator-item">{cart.length}</span>
                     </div>
                 </button>
-                <button class="btn btn-ghost btn-circle">
-                    <div class="indicator">
+                <button className="btn btn-ghost btn-circle">
+                    <div className="indicator">
                         <FaHeart></FaHeart>
-                        <span class="badge badge-sm indicator-item">{wishlist.length}</span>
+                        <span className="badge badge-sm indicator-item">{wishlist.length}</span>
                     </div>
                 </button>
             </div>

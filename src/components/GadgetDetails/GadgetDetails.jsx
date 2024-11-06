@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
 import Rating from "react-rating-stars-component";
 import { useShopping } from "../../context/ShoppingContext";
+import { Helmet } from "react-helmet-async";
 const GadgetDetails = () => {
     const { product_id } = useParams();
     const [gadget, setGadget] = useState(null);
@@ -27,20 +28,26 @@ const GadgetDetails = () => {
 
     return (
         <div className="min-h-screen bg-gray-100 pb-16 relative">
-            <div className="text-center mb-8 bg-purple-700 pt-10 pb-40">
-                <h1 className="text-4xl font-extrabold text-white">Product Details</h1>
-                <p className="text-white">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+            <Helmet>
+                <title>GadgetHaven | {gadget.product_title} Details</title>
+            </Helmet>
+            <div className="text-center mb-8 bg-purple-700 pt-10 pb-60">
+                <h1 className="text-3xl font-extrabold text-purple-200 w-11/12 mx-auto">Product Details</h1>
+                <p className="text-purple-300 w-10/12 mx-auto">
+                    Explore all the key details of your chosen product, from features and specifications to high-quality images and customer reviews. With pricing, availability, and related products at your fingertips, making an informed purchase has never been easier.</p>
             </div>
 
-            <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row lg:absolute bottom-20 lg:left-[17%]">
-                <button onClick={() => navigate(-1)} className="btn btn-outline text-xl text-purple-700 font-black rounded-xl absolute top-14 right-12">Back</button>
-                <div className="md:w-1/2 lg:flex justify-center items-center p-4">
-                    <div className="bg-gray-200 rounded-lg w-full h-80 flex justify-center items-center">
-                        <img
-                            src={gadget.product_image}
-                            alt={gadget.product_title}
-                            className="object-cover h-full w-full rounded-lg"
-                        />
+            <div className="w-11/12 lg:w-8/12 mx-auto bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row lg:absolute bottom-10 lg:left-[17%]">
+                <div className="md:w-1/2 p-4 flex flex-col">
+                    <button onClick={() => navigate(-1)} className="mb-5 w-fit btn btn-outline text-xl text-purple-700 font-black rounded-xl">Back</button>
+                    <div className=" lg:flex justify-center items-center">
+                        <div className="bg-gray-200 rounded-lg w-full h-80 flex justify-center items-center">
+                            <img
+                                src={gadget.product_image}
+                                alt={gadget.product_title}
+                                className="object-cover h-full w-full rounded-lg"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className="md:w-1/2 p-6">
@@ -70,16 +77,16 @@ const GadgetDetails = () => {
                                 activeColor="#ffd700"
                                 isHalf={true}
                                 edit={false}
-                            />
+                            ></Rating>
                                 <span className="ml-3">{gadget.rating.toFixed(1)}</span></span>
                         </div>
                     </div>
                     <div className="flex items-center mt-6 space-x-4">
                         <button onClick={() => addToCart(gadget)} className="flex items-center bg-purple-700 text-white px-6 py-2 rounded-full font-semibold">
-                            <FaShoppingCart className="mr-2" /> Add To Cart
+                            <FaShoppingCart className="mr-2"></FaShoppingCart> Add To Cart
                         </button>
                         <button onClick={() => addToWishlist(gadget)} className="flex items-center text-gray-600 bg-gray-200 p-3 rounded-full" disabled={isInWishlist}>
-                            <FaHeart className=" text-red-500" />
+                            <FaHeart className=" text-red-500"></FaHeart>
                         </button>
                     </div>
                 </div>

@@ -19,13 +19,18 @@ const FAQs = () => {
         }
     ];
     return (
-        <div className="text-center m-10">
+        <div className="text-center">
             <Helmet>
                 <title>GadgetHaven | FAQs</title>
             </Helmet>
+            <div className='bg-purple-700 py-10'>
+                <h2 className="text-3xl font-bold text-center mb-4 text-purple-200 w-11/12 mx-auto">Frequently Asked Questions</h2>
+                <p className='text-purple-300 mx-auto w-10/12'>
+                    Have questions? Our FAQ page is here to help! Whether you're looking for information about orders, shipping, or returns, you'll find clear and helpful answers to all your queries. Explore easy-to-navigate sections that guide you through everything, and if you need further assistance, our customer support is just a click away!</p>
+            </div>
 
             <div className="max-w-2xl mx-auto my-8 p-4">
-                <h2 className="text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+
                 <div className="space-y-4">
                     {faqs.map((faq, index) => (
                         <div key={index} tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
